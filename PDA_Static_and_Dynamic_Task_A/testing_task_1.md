@@ -11,7 +11,6 @@
 require_relative('card.rb')
 class CardGame
 
-#there is no "def initialize". This should be included and shall contain all the objects for this class
 
   def checkforAce(card)
     if card.value = 1
@@ -20,7 +19,7 @@ class CardGame
       return false
     end
   end
-#For this method (checkforAce), the equals sign should be double. Also, the card should be an object, and to be defined in the initialize
+#For this method (checkforAce), i would rephrase it as check_for_Ace, the equals sign should be double.
 
   dif highest_card(card1 card2)
   if card1.value > card2.value
@@ -30,7 +29,8 @@ class CardGame
   end
 end
 end
-#In above, for the method (highest_card), dif should be def. Also, the card1 and card2 should be objects
+#In above, for the method (highest_card), dif should be def. Return card.name should read "card1.suit".
+#Remove one endand move it to end of next method as it is for initialize method.
 
 def self.cards_total(cards)
   total
@@ -40,5 +40,7 @@ def self.cards_total(cards)
   end
 end
 
+#First, assign total to be equal to 0.
+#For the return string + integer, we may decide to convert the integer to string as as to make a complete sentence at return.
 
 ```
